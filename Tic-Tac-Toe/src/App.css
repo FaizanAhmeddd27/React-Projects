@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+    background: linear-gradient(135deg, #2C3E50, #222427);
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+    background: rgba(44, 62, 80, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    max-width: 95vw; 
+}
+
+.game-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #00FFFF;
+    text-shadow: 2px 2px 5px rgba(0, 255, 255, 0.7);
+}
+
+/* Fix grid layout */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 8px; 
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 300px; 
+    padding: 10px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    font-size: 3rem;
+    text-align: center;
+    border: 3px solid #00ffff;
+    background: #2c3e50;
+    color: #ff3366;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 255, 255, 0.4);
+}
+
+
+.cell:hover {
+    transform: scale(1.05);
+    background: #00ffff;
+    color: #2c3e50;
+}
+
+.message {
+    font-size: 1.4rem;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+}
+
+.winner {
+    background: #ffcc00;
+    color: #000;
+    box-shadow: 0 4px 8px rgba(255, 204, 0, 0.5);
+}
+
+.draw {
+    background: #e74c3c;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(231, 76, 60, 0.5);
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.reset-btn {
+    font-size: 1rem;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    background: #27ae60;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(39, 174, 96, 0.5);
+    transition: all 0.3s ease;
+}
+
+.reset-btn:hover {
+    background: #2ecc71;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.7);
+}
