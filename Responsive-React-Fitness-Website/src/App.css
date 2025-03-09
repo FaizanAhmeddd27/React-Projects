@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root{
+  --main-color: #ff2332;
+  --primary-color: #ff662d;
+  --dark-color: #37383c;
+  --dark-light-color: #3a3b3f;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Inter", sans-serif;
+  
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+ul{
+  list-style: none;
+  margin-left: 200px;
+}
+
+/* ----------- Navbar ------------- */
+
+.logo{
+  width: 16%;
+}
+
+.Nav-main a{
+  color: #fff;
+  font-size: 1.1rem;
+  letter-spacing: 0.4px;
+  font-weight: 300;
+}
+
+.Nav-main li{
+   padding: 1 0.4rem;
+   margin-left: 15px;
+}
+
+.Nav-main{
+  position: relative;
+  z-index: 100;
+  padding: 1rem 0;
+}
+
+.Nav-main a:hover,.Nav-main a:focus{
+  color: var(--main-color) !important;
+}
+
+.btn1{
+  border: 0;
+  padding: 0.7rem 1.55rem;
+  background-color: var(--main-color) !important;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+/* ----------- Hero Section -------- */
+
+.Hero{
+  background-image: url("./assets/HomeBack1-sioQ5hsM.jpg");
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top:0;
+}
